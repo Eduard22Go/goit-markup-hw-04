@@ -238,6 +238,31 @@ button {
 .feature-list .item:not(:last-child) {
     margin-right: 30px;
 }
+.feature-list .item::before {
+    display:block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    /* background-size: contain; */
+    background-size: 70px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-background-color);
+}
+.icon-antenna::before {
+    background-image: url(../IMG/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../IMG/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../IMG/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../IMG/astronaut.svg);
+}
 
 .feature-list .title {
     color:var(--headers-color);
