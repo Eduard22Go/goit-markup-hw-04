@@ -62,11 +62,11 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
+ 
     margin-bottom: 50px;
 }
 
-/* Убирает маркер в списках */
+/* Убирает маркер в списках  */
 .list,
 .feature-list {
     list-style: none;
@@ -231,6 +231,20 @@ button {
 
 /* Стили для index.html */
 /* Секція Особливості*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .feature-list {
     display:flex;
 }
@@ -238,31 +252,19 @@ button {
 .feature-list .item:not(:last-child) {
     margin-right: 30px;
 }
-.feature-list .item::before {
-    display:block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-    /* background-size: contain; */
-    background-size: 70px;
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--secondary-background-color);
-}
-.icon-antenna::before {
-    background-image: url(../IMG/antenna.svg);
-}
-.icon-clock::before {
-    background-image: url(../IMG/clock.svg);
+
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--secondary-background-color);
+
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
 }
 
-.icon-diagram::before {
-    background-image: url(../IMG/diagram.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../IMG/astronaut.svg);
-}
 
 .feature-list .title {
     color:var(--headers-color);
