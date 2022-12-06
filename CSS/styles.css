@@ -414,28 +414,86 @@ button {
 }
  
 /* Clients */
- .list-clients.list {
+ .clients-list.list {
     display: flex;
     align-items: center;
     justify-content: center;
  } 
- .clients-item {
+ /* .clients-item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
     height: 92px;
-    /* border: 1px solid var(--portfolio-cards-border); */
+    margin-left: 30px;
+    border: 1px solid var(--portfolio-cards-border);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    
-    margin-right: not-last;
- }
+    } */
+    /* .clients-item:first-child {
+        margin-left: 0;
+      } */
 
+      .clients-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--icon-color);
+        border-radius: 4px;
+      }      
+      .clients-item {
+        display: inline-block;
+        width: 170px;
+        height: 92px;
+      }
  .clients-item:not(:last-child) {
     margin-right: 30px;
  }
 
+
+ /* .clients-item:hover,
+ .clients-item:focus {
+    color:#2196f3;
+    fill: #2196f3;
+    border-color:#2196f3 ;
+  } */
+
+ /* .clients-link.link:hover
+ .clients-link.link:focus {
+    color:#2196f3;
+    fill: #2196f3;
+    border-color:#2196f3 ;
+ } */
+
+
+ .clients-icon {
+    /* width: 1em;
+    height: 1em; */
+    /* stroke-width: 0; */
+    /* stroke: currentColor; */
+    fill: #AFB1B8;  
+ }
+
+ /* .clients-icon:hover {
+
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #2196f3;  
+ } */
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: #2196f3;  
+}
+
+.clients-link:hover {
+    color:#afb1b8;
+  }
+  
+  .clients-link:hover {
+    border: 1px solid #2196f3;  
+  }
 /*Footer*/
 .link.list-address {
     color:var(--white-simbols-color);
